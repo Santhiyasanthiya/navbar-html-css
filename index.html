@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d hover effect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!--header div starts here-->
+    <div class="header">
+        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Wikipedia-logo-Martial-Arts-nobg.png" alt="logo">  <i class="fa-solid fa-bars" id="icon" onclick="showhide()"></i></div>
+        <div class="navbar" id="nav"><ul>
+            <li><a href="#"><span title="HOME">Home</span></a></li>
+            <li><a href="#"><span title="ABOUT">about</span></a></li>
+            <li><a href="#"><span title="SERVICES">services</span></a></li>
+            <li><a href="#"><span title="TEAM">team</span></a></li>
+            <li><a href="#"><span title="CONTACT US">contact us</span></a></li>
+        </ul></div>
+    </div>
+    <!--header div ends here-->
+
+
+
+    <!--script starts here-->
+    <script>
+      function showhide(){
+        let x = document.getElementById("nav");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        }else{
+            x.style.display = "block";
+        }
+      }
+    </script>
+    <!--script ends here-->
+
+<!--below script does not require to copy--> 
+
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+</body>
+</html>
